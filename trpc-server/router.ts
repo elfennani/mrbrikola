@@ -2,7 +2,7 @@ import "server-only";
 import db from '@/prisma/db';
 import { router, publicProcedure } from './index';
 import { z } from 'zod';
-import { User } from '@prisma/client';
+import { User } from "@prisma/client";
 
 export const appRouter = router({
   userList: publicProcedure

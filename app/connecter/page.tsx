@@ -1,17 +1,14 @@
 import LoginForm from "@/components/login-form";
-import { serverClient } from "@/trpc-client/server";
-
+import SignUpForm from "@/components/signup-form";
 import { NextPage } from "next";
 
 interface Props {}
 
 const HomePage: NextPage<Props> = async ({}) => {
-  const users = await serverClient.userList();
-
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center gap-12">
       <LoginForm />
-      {users.length}
+      <SignUpForm />
     </div>
   );
 };
