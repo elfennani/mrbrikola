@@ -1,9 +1,9 @@
-import { lucia } from "@/auth";
-import db from "@/prisma/db";
+import db from "@mrtrades/prisma";
 import { cookies } from "next/headers";
 import { z } from "zod";
 import "server-only"
 import { scrypt } from "crypto";
+import lucia from '@mrtrades/lucia'
 
 const schema = z.object({
   email: z.string().email(),

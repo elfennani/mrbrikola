@@ -1,0 +1,17 @@
+{
+  "name": "@mrtrades/lucia",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mrtrades/prisma": "*",
+    "@prisma/client": "^5.14.0"
+  }
+}

@@ -1,12 +1,17 @@
 {
-  "name": "mrbrikola-monorepo",
+  "name": "mrtrades",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "turbo dev"
+    "dev": "dotenv -- turbo dev"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*",
+    "tooling/*"
   ],
-  "packageManager": "npm@10.8.0"
+  "packageManager": "npm@10.8.0",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2"
+  }
 }

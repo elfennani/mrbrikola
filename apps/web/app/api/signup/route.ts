@@ -1,9 +1,9 @@
 import "server-only";
-import { lucia } from "@/auth";
-import db from "@/prisma/db";
+import db from "@mrtrades/prisma";
 import { cookies } from "next/headers";
 import { scrypt } from "crypto";
 import schema from "@/lib/zod/signup";
+import lucia from "@mrtrades/lucia";
 
 export async function POST(request: Request) {
   const input = await request.json();

@@ -1,0 +1,13 @@
+{
+  "extends": "@mrtrades/tsconfig/internal-package.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}

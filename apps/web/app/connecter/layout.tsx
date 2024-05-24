@@ -1,4 +1,4 @@
-import { lucia } from "@/auth";
+import lucia from "@mrtrades/lucia";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 

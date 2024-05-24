@@ -1,0 +1,19 @@
+{
+  "name": "@mrtrades/prisma",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./db.ts"
+  },
+  "scripts": {
+    "build-db": "prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prisma": "^5.14.0",
+    "@prisma/client": "^5.14.0"
+  }
+}
